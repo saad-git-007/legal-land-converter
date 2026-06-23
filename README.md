@@ -1,6 +1,6 @@
 # Legal Land and Map Coordinate Converter
 
-A small static web app for converting Western Canadian legal land descriptions to latitude/longitude coordinates, and for estimating a legal land location from map coordinates.
+A web app for converting Western Canadian legal land descriptions to latitude/longitude coordinates, and for estimating a legal land location from map coordinates.
 
 Live app: https://legal-land-convertor.netlify.app/
 
