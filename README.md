@@ -46,37 +46,57 @@ No npm install step is required.
 
 ## Launch
 
-After cloning the repository:
+Clone the repository on Ubuntu:
 
 ```bash
-git clone <your-repository-url>
-cd <your-repository-folder>
+git clone git@github.com:saad-git-007/legal-land-converter.git
+cd legal-land-converter
 ```
 
-Install requirements. This app has no Python package dependencies, so this is effectively a no-op, but it is safe to run:
+Check that Python is available for the local static server:
 
 ```bash
-python3 -m pip install -r requirements.txt
+python3 --version
 ```
 
-Start the local static server:
+Start the app on port `8000`:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open:
+Open the app in your browser:
 
 ```text
 http://127.0.0.1:8000
 ```
 
-Open a specific tab directly:
+Or from the Ubuntu terminal:
+
+```bash
+xdg-open http://127.0.0.1:8000
+```
+
+Open a specific tab directly in the browser:
 
 ```text
 http://127.0.0.1:8000/?mode=land
 http://127.0.0.1:8000/?mode=coordinates
 ```
+
+If port `8000` is already in use, run it on another port:
+
+```bash
+python3 -m http.server 8080
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8080
+```
+
+Stop the local server with `Ctrl+C` in the terminal where it is running.
 
 You can also open `index.html` directly in a browser, but using a local server is recommended.
 
