@@ -1,0 +1,5 @@
+# Runtime dependencies
+# This is a static HTML/CSS/JavaScript app and has no Python package dependencies.
+#
+# Optional local server for development:
+# Python 3.8+ with the standard library http.server module.
