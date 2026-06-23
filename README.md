@@ -100,11 +100,51 @@ Stop the local server with `Ctrl+C` in the terminal where it is running.
 
 You can also open `index.html` directly in a browser, but using a local server is recommended.
 
+## Deploy To Netlify
+
+This repository includes a Netlify-ready static publish folder:
+
+```text
+netlify-deploy/
+```
+
+The Netlify configuration is in:
+
+```text
+netlify.toml
+```
+
+Deploy from the Netlify web UI:
+
+1. Push this repository to GitHub.
+2. In Netlify, choose **Add new site**.
+3. Choose **Import an existing project**.
+4. Connect the GitHub repository.
+5. Use these build settings:
+
+```text
+Build command: leave blank
+Publish directory: netlify-deploy
+```
+
+Deploy with the Netlify CLI:
+
+```bash
+npm install -g netlify-cli
+netlify login
+netlify deploy --dir=netlify-deploy
+netlify deploy --prod --dir=netlify-deploy
+```
+
+If you edit `index.html`, `styles.css`, `app.js`, or screenshots, copy the changed files into `netlify-deploy/` before deploying.
+
 ## Files
 
 - `index.html` - app markup
 - `styles.css` - layout and visual styling
 - `app.js` - conversion logic, GIS lookups, map updates
+- `netlify.toml` - Netlify publish configuration
+- `netlify-deploy/` - static files used for Netlify deployment
 - `requirements.txt` - dependency note for GitHub
 - `screenshots/` - README screenshots
 
