@@ -2,6 +2,8 @@
 
 A small static web app for converting Western Canadian legal land descriptions to latitude/longitude coordinates, and for estimating a legal land location from map coordinates.
 
+Live app: https://legal-land-convertor.netlify.app/
+
 ## Screenshots
 
 Land to map coordinates mode lets you enter Quarter/LSD, Section, Township, Range, and Meridian. It returns coordinates, the method used, and a Google Maps satellite preview.
